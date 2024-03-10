@@ -7,14 +7,6 @@ export const connectDb = async () => {
     });
     console.log("connected");
     console.log(connection.host);
-    //   const User=new user({
-    //         name:"BIKASH MALU",
-    //         email:"bikashmalu1@gmail.com",
-    //         password:"12345",
-    //         about:"yh good.."
-    //     });
-    //     await User.save();
-    //     console.log('create')
   } catch (error) {
     console.log(error);
   }

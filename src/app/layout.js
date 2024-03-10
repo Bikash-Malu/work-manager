@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import "../../public/tailwind.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,10 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet"/> */}
       <body className={inter.className}>
-        <header>its header page</header>
+       <Navbar/>
         <div className="flex justify-around">{children}</div>
-        <footer>footer page</footer>
+        <Footer/>
       </body>
     </html>
   );
